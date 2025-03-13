@@ -16,12 +16,12 @@ def play():
 
 def next_track():
     global current_track
-    current_track = (current_track + 1) % len(tracks)  # Зацикливаем треки
+    current_track = (current_track + 1) % len(tracks)  # cycle
     play()
 
 def previous():
     global current_track
-    current_track = (current_track - 1) % len(tracks)  # Зацикливаем треки
+    current_track = (current_track - 1) % len(tracks)  
     play()
 
 def stop():
